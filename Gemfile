@@ -5,9 +5,17 @@ ruby '2.6.5'
 
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 
+gem 'activeadmin', '~> 2.6'
+gem 'activeadmin_addons'
+gem 'arctic_admin', '~> 3.0'
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'devise'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
+
+# Downgraded sprockets because of a bug with sprocket-4.0
+# https://tosbourn.com/fixing-an-issue-with-sprockets-and-feature-tests/
+gem 'sprockets', '~> 3.7.2'
 
 group :development, :test do
   gem 'awesome_print'
