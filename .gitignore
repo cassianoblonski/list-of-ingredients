@@ -31,3 +31,6 @@
 
 # Ignore Active Storage files
 /storage
+
+# Ignore Client node modules
+/client/node_modules
