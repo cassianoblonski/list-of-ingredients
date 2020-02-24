@@ -1,0 +1,19 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 2.7
+  Exclude:
+    - '**/bin/**/*'
+    - '**/tmp/**/*'
+    - '**/templates/**/*'
+    - '**/vendor/**/*'
+    - '**/node_modules/**/*'
+  RSpec:
+    Patterns:
+    - '_spec.rb$'
+  Performance/Size:
+    Exclude:
+      - '**/lib/**/*'
