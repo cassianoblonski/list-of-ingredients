@@ -44,5 +44,5 @@ group :test do
   gem 'capybara-screenshot', '~> 1.0', '>= 1.0.24'
   gem 'coveralls', require: false
   gem 'shoulda-matchers', '~> 4.3'
-  gem 'simplecov', '~> 0.18.3', require: false
+  gem 'simplecov', '~> 0.17.1', require: false
 end

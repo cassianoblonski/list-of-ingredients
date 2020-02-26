@@ -3,9 +3,12 @@
 require 'simplecov'
 require 'coveralls'
 
-SimpleCov.formatter = Coveralls::SimpleCov::Formatter
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
+  SimpleCov::Formatter::HTMLFormatter,
+  Coveralls::SimpleCov::Formatter
+])
+
 SimpleCov.start 'rails' do
-  minimum_coverage 90
   add_filter %r{^/(?!app|lib)/}
   add_filter %r{^/app/channels/}
   add_filter %r{^/app/jobs/}
